@@ -1,0 +1,22 @@
+package Console_apps;
+
+public class ForLoopPractice3 {
+public static void main(String [] args) {
+	// experimenting with while loops
+	int i=0; // this is the loop counter
+	
+	while( i <5 ) { //stay condition of the loop, as long as this is true , it will run the loop.
+	/* 
+	 * i = 0 is the initialization of the for loop
+	 * i <5 is the stay condition ( which is a boolean expression that , as long as its true , the loop will keep executing
+	 * itself
+	 * i++ means icrement the initialization of the loop by 1 each time the loop runs through 
+	 */
+		System.out.println("i is "+ i);
+		i++; // increment 1 so it becomes 1,2,3,4... 
+	}
+System.out.println("i is : " + i);
+// this for loop looks similar to a while loop.
+}
+}
+// by Delano

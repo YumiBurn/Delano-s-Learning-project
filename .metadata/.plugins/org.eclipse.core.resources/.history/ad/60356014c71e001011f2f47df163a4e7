@@ -1,0 +1,17 @@
+package model;
+
+public class Sequence {
+public static String getSequence(int ft, int d, int n) {
+	String result= "";
+	int term =ft;
+	
+	for(int i=1; i <=n; i++) {
+	result+=  "<";
+		
+	}
+	result += ">'";	
+	
+	return result;
+	
+}
+}

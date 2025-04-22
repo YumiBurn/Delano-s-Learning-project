@@ -1,0 +1,47 @@
+package console_app;
+
+import java.util.Scanner;
+/// this is example is gonna fix grade calcuator app 1 by using for loops and while loops
+
+public class GradeCalculatorApp2a{
+public static void main(String[] args) {
+	
+	Scanner input= new Scanner(System.in);
+	
+// this program calcuates the weighted sum of 5 assignments, each may come with a different weight.
+	/* 
+	 * Assignment 1 is 20% and has 50 marks associated with it                                                                      
+	 * assignment 2 has (40%)  attached to it with 70 marks
+	 */
+	System.out.println("Please enter your name");
+	String name = input.nextLine();
+	//initialziation of something to be used outside of the loop 
+	
+	double weightedSum= 0.0;
+	String assignmentBreak ="";
+	int i =1 ;
+	while(i<=5) {
+		System.out.println(name + " what is the weight of your "+ i + " assignment? ");
+		//replacing all our long statements with i , mark and weight which loops iteratively 
+		int weight= input.nextInt();
+		System.out.println("What is the mark of this " + i +"assignment ? " + name);
+		int mark= input.nextInt();
+		assignmentBreak+= "Assignment " + i  + " [" + mark + ", weight1 " +weight + "%]" +"\n" ;
+		
+	
+		if(i <=4) {
+			assignmentBreak += "\n";		
+		}
+		weightedSum+= weight * (mark / 100);
+		i++ ;
+	}
+	
+	System.out.println(assignmentBreak);
+	System.out.println("your weighted sum is ..." + weightedSum);
+	
+	
+	input.close();
+	
+	
+}
+}
