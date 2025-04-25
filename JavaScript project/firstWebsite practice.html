@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <body>
+    <head>
+
+<body>
 <h2> This is my first website locally </h2>
-<p id ="bookKeeper"></p>
+<p id="bookKeeper"></p>
+<button type ="button" onclick="myFunction()" > click here for lovely prizes part 2 </button>
 
-
+<p id="firstRun" > This is the first test run</p>
+</head>
 <script>
-docuement.getElementById("bookKeeper").innerHTML = "Welcome to my wonderful website";
+document.getElementById("bookKeeper").innerHTML = "Welcome to my wonderful website";
+
+
+function myFunction(){
+document.getElementByID("firstRun").innerHTML = "lets changes this sentence right..."
+}
+
+ 
 </script>
     </body>
 </html>
